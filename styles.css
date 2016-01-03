@@ -1,12 +1,12 @@
 /* mabel's style */
 
 body {
-    font-family: "Montserrat";
     color: #222;
     background-color: #FFEFE7;
     line-height: 180%;
     font-size: 1.2em;
     font-weight: normal;
+    font-family: Verdana, sans-serif;
 }
 
 a {
@@ -24,6 +24,7 @@ a:focus, a:hover {
 header {
     padding: 4em 0;
     text-align: center;    
+    font-family: "Montserrat";
 }
 header img {
     width: 25em;
@@ -43,6 +44,10 @@ header a {
     background-color: black;
     color: #fff;
     margin: 0 5px;
+}
+
+h2 {
+    font-family: "Montserrat";
 }
 section {
     padding: 1em 0;
