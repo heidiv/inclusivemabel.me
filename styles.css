@@ -1,0 +1,86 @@
+/* mabel's style */
+
+body {
+    font-family: "Montserrat";
+    color: #222;
+    background-color: #FFEFE7;
+    line-height: 180%;
+    font-size: 1.2em;
+    font-weight: normal;
+}
+
+a {
+    text-decoration: underline;
+    color: #063CA6;
+    padding: 3px;    
+}
+a:focus, a:hover {
+    background-color: #efefef;
+    color: #063CA6;
+    outline: 2px solid #222;
+    text-decoration: none;
+}
+
+header {
+    padding: 4em 0;
+    text-align: center;    
+}
+header img {
+    width: 25em;
+    margin-bottom: 1em;
+}
+header p {
+    font-size: 3em;
+    line-height: 160%;
+}
+header nav {
+    font-size: 1.7em;
+    display: inline-block;
+    margin-top: 1em;
+}
+header a {
+    text-decoration: none;
+    background-color: black;
+    color: #fff;
+    margin: 0 5px;
+}
+section {
+    padding: 1em 0;
+}
+
+section p, 
+section li, 
+section dl {
+    line-height: 180%;
+    font-size: 1.5em;
+}
+
+section dl {
+    margin-top: 1em;
+}
+section dd, section li, h2 {
+    margin-bottom: 1em;
+}
+
+footer {
+    text-align: center;
+    font-size: 1.2em;
+    padding: 2em 0 0 1em;
+}
+
+/* mobile */
+@media (max-width: 780px) {
+    h1 {
+        font-size: 200%;
+        display: inline-block;
+    }
+    .nav > li {
+       float: none;
+       display: inline-block; 
+       margin-top: 0.5em;
+    }        
+    .nav-pills {
+        display: inline-block;
+        width: 100%;
+    }        
+}
