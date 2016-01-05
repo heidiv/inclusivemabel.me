@@ -21,6 +21,15 @@ a:focus, a:hover {
     text-decoration: none;
 }
 
+code {
+    color: darkgreen;
+    background-color: white;
+    display:block;
+}
+main {
+    font-size: 1.5em;
+    line-height: 180%;
+}
 header {
     padding: 4em 0;
     text-align: center;    
@@ -49,22 +58,24 @@ header a {
 h2 {
     font-family: "Montserrat";
 }
+h3 {
+    font-family: "Montserrat";
+    margin-top: 1.5em;
+    font-size: 1.2em;
+    text-decoration: underline;
+}
 section {
-    padding: 1em 0;
+    padding: 0.5em 0;
 }
 
-section p, 
-section li, 
-section dl {
-    line-height: 180%;
-    font-size: 1.5em;
-}
-
-section dl {
+main dl {
     margin-top: 1em;
 }
-section dd, section li, h2 {
+main dd, 
+main li, 
+main p {
     margin-bottom: 1em;
+    line-height: inherit;
 }
 
 footer {

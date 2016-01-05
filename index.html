@@ -27,8 +27,10 @@
         <h1>Hello! I'm Mabel</h1>
         
         <nav>
+        <h2 class="sr-only">Page navigation</h2>
         <ul class="nav nav-pills">
-            <li><a href="#about">about</a></li>            
+            <li><a href="#about">about</a></li> 
+            <li><a href="#top">top issues</a></li>            
             <li><a href="#resources">resources</a></li>
         </ul>
         </nav>
@@ -37,14 +39,56 @@
 <main>
 <section id="about">
 <div class="container"> 
-    <h2>about</h2>   
+    <h2>About</h2>   
     <p>I'm a nice, fully automated bot that tests twitter account websites for accessibility. I send friendly tweets to users letting them know about any accessibility issues present on their site.</p> 
-    <p>Find me <a href="http://twitter.com/weba11ybot">@weba11ybot</a> and feel free to send me any questions.</p>        
+    <p>Find me <a href="http://twitter.com/weba11ybot">@weba11ybot</a> and feel free to send me any questions.</p>            
+</div>
+</section>
+<section id="top">
+<div class="container"> 
+    <h2>Top Issues</h2>   
+    <p>Here are some issues I frequently encounter with details on how to fix them:</p>
+    <dl>
+        <dt><h3>Image missing alt attribute</h3></dt>
+        <dd><p>Image alternatives are important for users using assistive technologies (like screenreaders). A description of the image helps users understand what information it's visually conveying. To do this set the "alt" attribute on all img tags. If the image is purely decorative, set the alt to be empty so it is ignored.</p> 
+        
+        <p>Example: informative image 
+        <code> &lt;img src="bird.jpg" alt="photo of a bluejay eating a worm"&gt;</code></p>
+        <p>Example: decorative image 
+        <code> &lt;img src="background.jpg" alt=""&gt;</code></p>
+        </dd>
+
+        <dt><h3>Duplicate ID</h3></dt>             
+        <dd><p>IDs are used to identify unique elements within a webpage. They're useful to link to and reference, particularly for keyboard and assistive technology interactions. But if an ID is used more than once, these supports will break. Ensure IDs are only used once per page.</p>
+        
+            <p>Example: div with id 
+            <code> &lt;div id="unique_id"&gt;</code></p>        
+        </dd>
+        
+        <dt><h3>Blank link text</h3></dt>
+        <dd><p>A link without link text will not be understandable to assistive technology users. This often happens for links that are font icons or images. Provide link text (that can be visually hidden) or an accessible label (aria-label attribute).</p>
+        
+            <p>Example: link icon (that is displayed with CSS)
+            <code> &lt;a href="http://mywebsite.org"&gt;&lt;span class="sr-only"&gt;My website&lt;/span&gt;&lt;/a&gt;</code></p>          
+        </dd>
+        
+        <dt><h3>Language not set</h3></dt>
+        <dd><p>Programmatically setting the language of your website will help assistive technologies correctly pronounce the content on your site.</p>
+        
+        <p>Example: an English website
+            <code> &lt;html lang="en"&gt;</code></p>
+            </dd> 
+            
+        <dt><h3>Link text with identical title</h3></dt>
+        <dd><p>Adding a title to link text could result in repetition and confusion for assistive technology users as both the title and link text may be read out. Simplify! Remove title attributes on links as they're not helpful.</p></dd> 
+                               
+    </dl>
+    <p><strong>This list will grow so check back soon. Beep boop!</strong></p>
 </div>
 </section>
 <section id="resources">
 <div class="container"> 
-    <h2>resources</h2>    
+    <h2>Resources</h2>    
     <p>Here are a few links to get you started with web accessibility:</p>
     <dl>
         <dt><a href="http://www.w3.org/WAI/gettingstarted/tips/index.html">W3C Tips for Getting Started with Web Accessibility</a></dt>
@@ -62,7 +106,7 @@
 
 <footer>
 <div class="container"> 
-<p>created with accessibility love and good intentions</p>
+<p>created by <a href="http://heidi.work">heidi v.</a> with accessibility love and good intentions</p>
 </div>
 </footer>
 
